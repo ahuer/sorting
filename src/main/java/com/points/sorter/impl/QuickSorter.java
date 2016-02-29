@@ -28,7 +28,7 @@ public class QuickSorter<T extends Comparable<T>> implements Sorter {
             return;
         }
 
-        if (list.size() == 0) {
+        if (list.isEmpty()) {
             LOG.error("Cannot sort empty list");
             return;
         }
@@ -41,7 +41,7 @@ public class QuickSorter<T extends Comparable<T>> implements Sorter {
             return;
         }
         
-        if (!(lowIndex < highIndex) ) {
+        if (lowIndex >= highIndex ) {
             return;
         }
         
