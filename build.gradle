@@ -3,7 +3,7 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'eclipse'
 
-// JDK 7
+// JDK
 sourceCompatibility=1.8
 targetCompatibility=1.8
 
@@ -13,7 +13,6 @@ repositories {
 }
 
 dependencies {
-	compile files('libs/libraries.jar')
 	
 	// Logging
     compile 'ch.qos.logback:logback-classic:1.1.3'
